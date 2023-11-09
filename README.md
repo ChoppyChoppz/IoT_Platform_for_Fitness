@@ -40,3 +40,8 @@ his results (i.e. training score).
 
 A complete use-case diagram can be viewed [Here](IoT_use_case.png)
 
+To execute the docker 
+
+'''docker
+docker build -t my-app-image .
+'''
