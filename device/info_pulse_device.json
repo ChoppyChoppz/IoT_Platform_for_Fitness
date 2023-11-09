@@ -1,0 +1,15 @@
+{
+  "endpoints": [
+    "MQTT"
+  ],
+  "resources": [
+    {
+      "n": "Sp02",
+      "u": "%"
+    },
+    {
+      "n": "frequency",
+      "u": "bpm"
+    }
+  ]
+}

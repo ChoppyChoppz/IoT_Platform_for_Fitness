@@ -1,0 +1,66 @@
+version: '3.10'
+services:
+
+  catalog:
+    container_name: catalog
+    image: fitnesscatalog
+    build: 
+      context: ./catalog
+      dockerfile: Dockerfile
+    restart : on-failure
+    ports:
+      - "8080:8080"
+    expose:
+      - 8080
+    volumes:
+      - ./catalog:/fitnesscatalog
+
+  analysis:
+    container_name: analysis
+    image: analysis
+    build: 
+      context: ./microservices/analysis
+      dockerfile: Dockerfile
+    restart : on-failure
+    depends_on:
+      - catalog
+
+  alarm:
+    container_name: alarm
+    image: alarm
+    build: 
+      context: ./microservices/alarm
+      dockerfile: Dockerfile
+    restart : on-failure
+    depends_on:
+      - catalog
+
+  training:
+    container_name: training
+    image: training
+    build: 
+      context: ./microservices/training
+      dockerfile: Dockerfile
+    restart : on-failure
+    depends_on:
+      - catalog
+
+  telegram:
+    container_name: telegram
+    image: telegrambot
+    build: 
+      context: ./telegram
+      dockerfile: Dockerfile
+    restart : on-failure
+    depends_on:
+      - catalog
+
+  thingspeakadaptor:
+    container_name: thingspeakadaptor
+    image: thingspeakadaptor
+    build: 
+      context: ./thingspeakadaptor
+      dockerfile: Dockerfile
+    restart : on-failure
+    depends_on:
+      - catalog

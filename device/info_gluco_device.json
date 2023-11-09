@@ -1,0 +1,11 @@
+{
+  "endpoints": [
+    "MQTT"
+  ],
+  "resources": [
+    {
+      "n": "glucometer",
+      "u": "mg/dL"
+    }
+  ]
+}

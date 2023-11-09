@@ -1,0 +1,23 @@
+{
+  "endpoints": [
+    "MQTT"
+  ],
+  "resources": [
+    {
+      "n": "duration",
+      "u": "min"
+    },
+    {
+      "n": "distance",
+      "u": "km"
+    },
+    {
+      "n": "step",
+      "u": "number of steps"
+    },
+    {
+      "n": "burned_calories",
+      "u": "kcal"
+    }
+  ]
+}

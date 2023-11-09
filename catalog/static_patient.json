@@ -1,0 +1,17 @@
+{
+  "broker": {
+    "IP": "test.mosquitto.org",
+    "mqtt_port": 1883,
+    "baseTopic": "IoT_project"
+  },
+  "thingspeak": {
+    "IP": "127.0.0.1",
+    "port": "8081",
+    "URL": "https://api.thingspeak.com/update.json",
+    "url_clear_channel": "https://api.thingspeak.com/channels/",
+    "url_new_channel": "https://api.thingspeak.com/channels.json",
+    "url_delete_channel": "https://api.thingspeak.com/channels/"
+  },
+  "TS_delete": [],
+  "patient": []
+}

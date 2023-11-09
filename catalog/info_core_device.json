@@ -1,0 +1,19 @@
+{
+  "endpoints": [
+    "MQTT"
+  ],
+  "resources": [
+    {
+      "n": "weight",
+      "u": "kg"
+    },
+    {
+      "n": "BMI",
+      "u": "kg/m^2"
+    },
+    {
+      "n": "water_mass",
+      "u": "kg"
+    }
+  ]
+}
