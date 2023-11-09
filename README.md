@@ -5,9 +5,13 @@ The solution proposed aims to improve the lifestyle of athletes and people with 
 
 Summarizing, the main features it offers are:  
 • remote control of health signals; 
+
 • unified interfaces (i.e. REST Web Services and MQTT queues); 
+
 • end-user applications for self-awareness, carried out via telegram bot
 
 Two videos were made to sponsor the service and explain to the user how it works.
+
 [VIDEO PROMO](https://www.youtube.com/watch?v=aDHM0BEvmKE&t=3s&ab_channel=IoTProject_Group23)
+
 [VIDEO DEMO](https://www.youtube.com/watch?v=ZF9cDwG5808&ab_channel=IoTProject_Group23)
