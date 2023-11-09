@@ -39,3 +39,4 @@ his results (i.e. training score).
 • Telegram Bot is a service to integrate the proposed infrastructure into Telegram platform, which is a cloud-based instant messaging infrastructure. It retrieves measurements from IoT devicesv exploiting the subscription to Message Broker. It also speaks with Thingspeak and the Catalog through REST Web Services. 
 
 A complete use-case diagram can be viewed [Here](use-case-diagram.png)
+
